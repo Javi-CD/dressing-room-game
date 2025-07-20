@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-pink-100 to-purple-100 min-h-screen;
+  }
+}
+
+@layer components {
+  .game-button {
+    @apply bg-gradient-to-r from-game-pink to-game-purple text-white px-4 py-2 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105;
+  }
+
+  .wardrobe-item {
+    @apply bg-white rounded-lg shadow-md p-2 cursor-pointer hover:shadow-lg transition-all duration-200 transform hover:scale-105;
+  }
+
+  .doll-container {
+    @apply relative bg-white rounded-xl shadow-2xl p-4;
+  }
+}
